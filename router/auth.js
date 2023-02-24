@@ -336,6 +336,10 @@ router.post("/movierequest", async (req, res) => {
   }
 });
 
+router.get("/testimran", async (req, res) => {
+  res.send("New Backend ");
+});
+
 router.get("/appdetails", async (req, res) => {
   const appData = await Appdetails.findOne();
   res.send(appData);
